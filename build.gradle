@@ -6,6 +6,9 @@ repositories {
     mavenCentral()
 }
 
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
 dependencies {
     //JUnit5
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
